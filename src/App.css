@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#imgFirstPage {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#background {
+  position: absolute;
+  top: 5vh;
+  left: -10vw;
+  height: 100vh;
+  width: 125vw;
+  background-image: url("/src/assets/compressedbg.png");
+  background-size: cover; 
+  animation: compression 1s forwards;
+}
+
+#hovering-text{
+  position: absolute;
+  font-size: 1.5vw;
+  top: 75vh;
+  left: 40vw;
+  opacity: 0%;
+  text-align-last: center;
+  z-index: 2;
+  animation: appear 2s forwards;
+}
+
+#heading2{
+  color: #00B7A9;
+}
+
+ @media only screen and (max-width: 768px) {
+  #background {
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+} 
+
+@keyframes compression {
+  from{
+    top: 5vh;
+    left: -10vw;
+    height: 100vh;
+    width: 125vw;
+  }
+  to{
+    top: 25vh;
+    left: 0vw;
+    height: 75vh;
+    width: 100vw;
+  }
+}
+
+@keyframes appear {
+  from{
+    top: 75vh;
+    left: 40vw;
+    opacity: 0%;
+  }
+  to{
+    top: 10vh;
+    left: 40vw;
+    opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #background {
+    top: 50vh;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain; 
+    background-repeat: no-repeat;
+  }
+}
