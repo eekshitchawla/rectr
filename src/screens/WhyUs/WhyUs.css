@@ -44,7 +44,7 @@ h1.enlarged {
 }
   
 
-#scrollContainer {
+.slider{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -54,7 +54,7 @@ h1.enlarged {
     margin: 2%;
   }
 
-  /* .photoScroll::-webkit-scrollbar{
+  /* ::-webkit-scrollbar{
     display: none;
 } */
   

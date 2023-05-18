@@ -1,44 +1,13 @@
-/* #teamPageCard{
-    height: 120vh;
-    background-image: url('../../assets/team.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end; 
-    align-items:flex-end;
-}
-
-#glassCardContainer{
-    height: 50vh;
-    width: 50vh;
-}
-#avatar{
-    height: 15vh;
-    width: 13vh;
-}
-#glassCard{
-    height: 30vh;
-    width: 30vh;
-    background-image: url('../../assets/glassCard.png');
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-} */
-
-
 #teamPageCard {
-    height: 120vh;
+    height: 150vh;
     background-image: url('../../assets/team.png');
     background-repeat: no-repeat;
     background-size:100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #memberCardsContainer {
@@ -74,4 +43,85 @@
     justify-content: center;
     align-items: center;
     padding: 1%;
+}
+
+#footer{
+    color: white;
+    height: 20vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+#faqContainer, #reachUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#faq, #reach{
+    font-size: 6vh;
+    font-weight: 700;
+}
+
+#reach{
+    text-align: center;
+}
+
+#dropUps{
+    width: 60%;
+}
+
+#dropUp{
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+}
+
+#dropUpContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+#msgFaq{
+    width: 10vw;
+    /* border: 3px solid white; */
+    box-shadow: 2px 2px 5px  white;
+    background-color: rgb(255,255,255,0.2);
+    border-radius: 20px;
+    margin-left: auto;
+    padding: 1vh;
+}
+
+#tri{
+    height: 1.5vh;
+}
+
+#triTurn{
+    height: 1.5vh;
+    transform: rotate(90deg);
+}
+
+#imgsLink{
+    display: flex;
+    justify-content: space-between;
+}
+#link{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+#mailCont, #instaCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reachImg{
+    height: 10vh;
 }
