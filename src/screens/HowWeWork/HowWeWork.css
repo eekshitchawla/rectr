@@ -1,0 +1,68 @@
+#workPage{
+    margin: 0;
+    height: 100vh;
+    background-image: url(../../assets/howWeWork.png);
+    display: flex;
+    flex-wrap: wrap;
+}
+#headingWork{
+    font-size: 10vh;
+    width: 100%;
+    color: white;
+    padding: 2%;
+}
+
+#imgs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.containers{
+    width:fit-content;
+    padding: 2%;
+    place-self: center;
+    flex-wrap: wrap;
+}
+
+#bdImg, #amImg, #uaImg, #daImg{
+    height: 30vh;
+    width: 32vh;
+    padding: 2%;
+}
+
+#paImg{
+    height: 50vh;
+    width: 40vh;
+}
+
+#solImg{
+    height: 45vh;
+    width: 35vh;
+}
+
+#saImg{
+    width: 30vh;
+    height: auto;
+}
+
+#uaImg, #daImg, #saImg, #solImg, .imgTag{
+    animation: appear 2s 1 forwards ;
+    animation-delay: 2s;
+    opacity: 0;
+}
+#con1, #con2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}

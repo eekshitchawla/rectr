@@ -1,21 +1,22 @@
 #navbarParentContainer {
     width: 100%;
-    position: absolute;
     display: flex;
-    top: 2vh;
     opacity: 0%;
     animation: bringDown 2s 1s forwards;
-    z-index: 3;
     flex-wrap: wrap;
     overflow: hidden;
+    z-index: 999;
+    /* position: sticky; */
   }
   
   #navbarContainer {
     width: 100%;
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-around;
+    align-items: center;
   }
   
   #logoContainer {
@@ -35,30 +36,24 @@
     display: flex;
     list-style: none;
   }
-
+  
   #listItems>ul>li>button{
+     cursor: pointer;
+    position: relative;
     font-size: 1vw;
     border: none;
     background-color: white;
     font-weight: 700;
   }
-  
-  /* #listItems>ul>li>button:hover{
-    text-decoration: underline #00B7A9;
-    border-bottom: 1px solid #00B7A9;
-    border-bottom-length: 50%;
+  html{
+    scroll-behavior: smooth;
   }
-   */
-
-   #listItems>ul>li>button {
-    position: relative; /* Add relative position to parent button */
-    font-size: 1vw;
-    border: none;
-    background-color: white;
-    font-weight: 700;
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
   }
-  
-  #listItems>ul>li>button::before {
+  #listItems>ul>li>button::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -83,10 +78,11 @@
   #signUpContainer {
     display: flex;
     flex-direction: column;
+    padding: 1vw;
   }
   
   #getInButton {
-    padding: .5vw;
+    padding: 0.5vw;
     background-color: white;
     border: 3px solid black;
     font-size: .9vw;

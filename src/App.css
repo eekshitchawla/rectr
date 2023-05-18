@@ -1,84 +1,59 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-#imgFirstPage {
+/* home.js css */
+#landingPage{
   height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vh;
 }
 
-#background {
-  position: absolute;
-  top: 5vh;
-  left: -10vw;
-  height: 100vh;
-  width: 125vw;
-  background-image: url("/src/assets/compressedbg.png");
-  background-size: cover; 
-  animation: compression 1s forwards;
+#headingContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide-in-left 2s 1 forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
-#hovering-text{
-  position: absolute;
-  font-size: 1.5vw;
-  top: 75vh;
-  left: 40vw;
-  opacity: 0%;
-  text-align-last: center;
-  z-index: 2;
-  animation: appear 2s forwards;
-}
-
-#heading2{
-  color: #00B7A9;
-}
-
- @media only screen and (max-width: 768px) {
-  #background {
-    top: 0;
-    height: 100vh;
-    width: 100vw;
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
   }
-} 
-
-@keyframes compression {
-  from{
-    top: 5vh;
-    left: -10vw;
-    height: 100vh;
-    width: 125vw;
-  }
-  to{
-    top: 25vh;
-    left: 0vw;
-    height: 75vh;
-    width: 100vw;
-  }
-}
-
-@keyframes appear {
-  from{
-    top: 75vh;
-    left: 40vw;
-    opacity: 0%;
-  }
-  to{
-    top: 10vh;
-    left: 40vw;
+  to {
     opacity: 100%;
+    transform: translateX(0%);
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #background {
-    top: 50vh;
-    height: 100vh;
-    width: 100vw;
-    background-size: contain; 
-    background-repeat: no-repeat;
+#heading, #content{
+  padding: 5%;
+}
+#imgContainer{
+  width: 60%;
+  opacity: 0;
+  animation: slide-in-right 2s 1 forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width:768px){
+  #landingPage{
+    flex-direction: column;
+  }
+  #headingContainer, #imgContainer{
+    width: 100%;
   }
 }

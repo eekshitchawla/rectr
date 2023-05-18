@@ -1,0 +1,77 @@
+/* #teamPageCard{
+    height: 120vh;
+    background-image: url('../../assets/team.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end; 
+    align-items:flex-end;
+}
+
+#glassCardContainer{
+    height: 50vh;
+    width: 50vh;
+}
+#avatar{
+    height: 15vh;
+    width: 13vh;
+}
+#glassCard{
+    height: 30vh;
+    width: 30vh;
+    background-image: url('../../assets/glassCard.png');
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+} */
+
+
+#teamPageCard {
+    height: 120vh;
+    background-image: url('../../assets/team.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#memberCardsContainer {
+    width: 90%;
+    overflow-x: scroll; 
+    z-index: 999;
+}
+#memberCardsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#glassCardContainer {
+    padding: 0 5%;
+    height: 50vh;
+    width: 50vh;
+}
+
+#avatar {
+    height: 15vh;
+    width: 13vh;
+}
+
+#glassCard {
+    height: 30vh;
+    width: 30vh;
+    background-image: url('../../assets/glassCard.png');
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}

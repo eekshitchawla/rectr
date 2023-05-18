@@ -1,0 +1,10 @@
+#trianglePage{
+    height: 120vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

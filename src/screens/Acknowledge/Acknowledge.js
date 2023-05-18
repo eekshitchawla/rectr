@@ -1,0 +1,15 @@
+import React from "react";
+import '../Acknowledge/Acknowledge.css';
+import mailPic from '../../assets/mail.png';
+
+const Acknowledge = () => {
+    return <>
+        <div id="ackContainer">
+            <img id="mailPic" src={mailPic} alt="mail" srcset="" />
+            <div id="txtMail"><strong>Check your Inbox!!!</strong></div>
+            <div id="txtMail">We've subscribed you to the newsletter!</div>
+        </div>
+    </>;
+};
+
+export default Acknowledge;

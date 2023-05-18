@@ -1,20 +1,23 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './Home';
 import Navbar from './screens/Navbar/Navbar';
-import BACKGROUND from './assets/compressedbg.png'
+import SignUp from './screens/SignUp/SignUp';
+import SignIn from './screens/SignIn/SignIn';
+import Acknowledge from './screens/Acknowledge/Acknowledge';
 
 function App() {
   return (
     <>
       <Navbar />
-      <div id="imgFirstPage">
-        <div id="hovering-text">
-          <div id="heading1"><h1>WELCOME TO</h1></div>
-          <div id="heading2"><h1>RECTR.IN</h1></div>
-        </div>
-        <div style={{ paddingTop: 160 }}>
-          <img src={BACKGROUND} alt="background" height="auto" width="100%" />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/ack" element={<Acknowledge />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

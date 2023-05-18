@@ -1,0 +1,128 @@
+#signUpPage{
+    display: flex;
+    background-color: #008D86;
+}
+
+#pictureContainer{
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUpPic{
+    height: 50vh;
+}
+
+#detailsContainer{
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    border-radius: 30% 0 0 0;
+    overflow: hidden;
+}
+
+#innerContanier{
+    padding: 10vh 0 0 10vw;
+    width: 90%;
+}
+  
+#txt{
+    font-size: 2em;
+    color: #008D86;
+    font-weight: 700;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.inputField{
+    padding: 10px 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #008D86;
+    margin: 3%;
+}
+
+#tnc{
+    display: flex;
+}
+
+#signUpBtn{
+    color: white;
+    padding: 3%;
+    background-color: #008D86;
+    border-radius: 20px;
+    border: none;
+}
+
+
+#horizontalComponent{
+    width: 50%; 
+    height: 20px; 
+    border-bottom: 1px solid black; 
+    text-align:  center; 
+}
+
+#spanSection{
+    font-size: 20; 
+    background-color: white; 
+    color: rgb(153, 150, 150);
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+#otherHalf{
+    padding: 20px;
+}
+
+#google{
+    position: relative;
+    left: 20%;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid grey;
+    padding: 8px;
+    color: red;
+    font-weight: 700;
+}
+
+#alreadyUser{
+    display: flex;
+    padding: 3%;
+}
+
+#signInBtn{
+    background-color: #fff;
+    border: none;
+    color: #008D86;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* CSS rules for mobile devices */
+    #signUpPage{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    #pictureContainer, #detailsContainer{
+        width: 100%;
+        border-radius: 0%;
+    }
+    #form{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,76 @@
+#featuresPage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/src/assets/featuresBg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 2vh;
+}
+
+#mainHeading{
+    color: #00B7A9;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+  
+
+#cards::-webkit-scrollbar{
+    display: none;
+}
+
+#card1{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.cardImg{
+    width: 90%;
+}
+#txtCard1{
+    width: 40%;
+    padding: 5%;
+}
+#imgCard1{
+    width: 40%;
+}
+
+@media only screen and (max-width: 768px){
+    #featuresPage{
+        height: 520vh;
+    }
+    #card1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5% 0;
+    }
+    #cards{
+        padding-top: 30%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #heading{
+        text-align: justify;
+    }
+}
