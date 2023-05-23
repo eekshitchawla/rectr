@@ -1,92 +1,7 @@
-// import React, { useState } from "react";
-// import imgUs from '../../assets/aiml.png';
-// import '../WhyUs/WhyUs.css'
-
-// const WhyUs = () => {
-//     const data = [
-//         {
-//             id: 1,
-//             key: 1,
-//             title: "Lorem Ipsum 1",
-//             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-//             img: { imgUs }
-//         },
-//         {
-//             id: 2,
-//             key: 2,
-//             title: "Lorem Ipsum 2",
-//             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-//             img: { imgUs }
-//         },
-//         {
-//             id: 3,
-//             key: 3,
-//             title: "Lorem Ipsum 3",
-//             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-//             img: { imgUs }
-//         },
-//         {
-//             id: 4,
-//             key: 4,
-//             title: "Lorem Ipsum 4",
-//             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-//             img: { imgUs }
-//         },
-
-//     ];
-
-//     const [toggle, setToggle] = useState("1");
-
-//     return (
-//         <div id="whyUsPage">
-//             <h1 id="mainHead">What We Offer?</h1>
-//             <div id="bodyWhy">
-//                 <span id="lhs">
-//                     {data.map(({ title, text, key, img }) => {
-//                         return (
-//                             <>
-//                                 <span className="main">
-//                                     <h1 className={toggle === key ? "enlarged" : ""} onClick={() => setToggle(key)}>
-//                                         {title}
-//                                     </h1>
-
-//                                     <div className="img">
-//                                         {
-//                                             toggle === key ? (
-//                                                 <>
-//                                                     <img alt="" src={imgUs} key={key} className="photo" />
-//                                                 </>
-//                                             ) : null
-//                                         }
-//                                     </div>
-//                                 </span>
-
-//                             </>
-//                         );
-//                     })}
-//                 </span>
-//                 <div id="scrollContainer">
-//                     <img alt="" src={imgUs} />
-//                     <img alt="" src={imgUs} />
-//                     <img alt="" src={imgUs} />
-//                     <img alt="" src={imgUs} />
-//                 </div>
-//                 <div id="scrollContainer">
-//                     {data.map(({ id, img }) =>
-//                         toggle == id ? <img alt="" src={img} key={id} /> : null
-//                     )}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-
-// export default WhyUs;
-
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import imgUs from '../../assets/aiml.png';
-import '../WhyUs/WhyUs.css'
+import imgUs2 from '../../assets/bigData.png';
+import '../WhyUs/WhyUs.css';
 
 const WhyUs = () => {
     const data = [
@@ -102,7 +17,7 @@ const WhyUs = () => {
             key: 2,
             title: "Lorem Ipsum 2",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: imgUs2
         },
         {
             id: 3,
@@ -116,38 +31,50 @@ const WhyUs = () => {
             key: 4,
             title: "Lorem Ipsum 4",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: imgUs2
         }
     ];
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [toggle, setToggle] = useState(1);
+    const scrollContainerRef = useRef(null);
 
-    const handleSlideClick = (index) => {
-        setActiveIndex(index);
+    const handleTextClick = (id) => {
+        setToggle(id);
+        const imageIndex = id - 1;
+        scrollContainerRef.current.scrollTo({
+            top: imageIndex * scrollContainerRef.current.offsetHeight,
+            behavior: "smooth"
+        });
     };
 
     return (
         <div id="whyUsPage">
             <h1 id="mainHead">What We Offer?</h1>
-            <div id="contentContainer">
-                <div className="text">
-                    <h1>{data[activeIndex].title}</h1>
-                    <p>{data[activeIndex].text}</p>
-                </div>
-                {/* <div className="slider">
-                    <div className="slides">
-                        {data.map(({ title, key, img }, index) => (
-                            <div
+            <div id="bodyWhy">
+                <span id="lhs">
+                    <div id="titleContainer">
+
+                        {data.map(({ title, key }) => (
+                            <h1
                                 key={key}
-                                className={`slide ${activeIndex === index ? "active" : ""}`}
-                                onClick={() => handleSlideClick(index)}
+                                className={toggle === key ? "enlarged" : ""}
+                                onClick={() => handleTextClick(key)}
                             >
-                                <img src={img} alt="" className="photo" />
-                            </div>
+                                {title}
+                            </h1>
                         ))}
                     </div>
-                </div> */}
-
+                </span>
+                <div id="scrollContainer" ref={scrollContainerRef}>
+                    {data.map(({ id, img }) => (
+                        <img
+                            key={id}
+                            alt=""
+                            src={img}
+                            className={toggle === id ? "active" : ""}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );

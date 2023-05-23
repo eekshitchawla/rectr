@@ -1,7 +1,8 @@
 #workPage{
     margin: 0;
-    height: 100vh;
+    height: 120vh;
     background-image: url(../../assets/howWeWork.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
@@ -47,7 +48,8 @@
     height: auto;
 }
 
-#uaImg, #daImg, #saImg, #solImg, .imgTag{
+/* #uaImg, #daImg, #saImg, #solImg, .imgTag */
+.animate{
     animation: appear 2s 1 forwards ;
     animation-delay: 2s;
     opacity: 0;

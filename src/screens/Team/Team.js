@@ -31,8 +31,10 @@ const Team = () => {
     ];
 
     const memberCards = members.map((member) => (
-        <div key={member.key} id="glassCardContainer">
-            <div id="glassCard">
+
+        <div key={member.key} //id="glassCardContainer">
+            className={`glassCardContainer${isClickedFaq ? "active" : ""}`}>
+            <div className="glassCard" id="glassCard">
                 <img id="avatar" src={member.picUrl} alt="avatar" />
                 <div id="nameInCard">
                     <strong>{member.memName}</strong>
@@ -59,40 +61,42 @@ const Team = () => {
                     {memberCards}
                 </Slider>
             </div>
-            <div id="footer">
-                <div id="faqContainer">
-                    <div id="faq">FAQ</div>
-                    <div id="dropUps">
-                        <div id="dropUp" onClick={handleFaq}>
-                            {isClickedFaq ? <div id="msgFaq" >Message displayed!</div> : null}
-                            <div id="dropUpContent"> How to use? <img id={isClickedFaq ? "triTurn" : "tri"} src={tri} alt="" /></div>
+            <footer id="footerContainer">
+                <div id="footer">
+                    <div id="faqContainer">
+                        <div id="faq">FAQ</div>
+                        <div id="dropUps">
+                            <div id="dropUp" onClick={handleFaq}>
+                                {isClickedFaq ? <div id="msgFaq" >Message displayed!</div> : null}
+                                <div id="dropUpContent"> How to use? <img id={isClickedFaq ? "triTurn" : "tri"} src={tri} alt="" /></div>
+                            </div>
+                            <div id="dropUp" onClick={handleHost}>
+                                {isClickedHost ? <span id="msgFaq" >Message displayed!</span> : null}
+                                <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
+                            </div>
                         </div>
-                        <div id="dropUp" onClick={handleHost}>
-                            {isClickedHost ? <span id="msgFaq" >Message displayed!</span> : null}
-                            <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
+                    </div>
+                    <div id="reachUs">
+                        <div id="reach">REACH US</div>
+                        <div id="imgsLink">
+                            <div id="mailCont">
+                                <img id="reachImg" src={mail} alt="" />
+                                <u>
+                                    <a id="link" href="http://localhost:3000/">Happy to Hear</a>
+                                </u>
+
+                            </div>
+                            <div id="instaCont">
+                                <img id="reachImg" src={insta} alt="" />
+                                <u>
+
+                                    <a id="link" href="http://localhost:3000/">Happy to Hear</a>
+                                </u>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="reachUs">
-                    <div id="reach">REACH US</div>
-                    <div id="imgsLink">
-                        <div id="mailCont">
-                            <img id="reachImg" src={mail} alt="" />
-                            <u>
-                                <a id="link" href="http://localhost:3000/">Happy to Hear</a>
-                            </u>
-
-                        </div>
-                        <div id="instaCont">
-                            <img id="reachImg" src={insta} alt="" />
-                            <u>
-
-                                <a id="link" href="http://localhost:3000/">Happy to Hear</a>
-                            </u>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </footer>
         </div>
     );
 };
