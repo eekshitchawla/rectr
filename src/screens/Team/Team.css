@@ -12,8 +12,8 @@
 
 #memberCardsContainer {
     width: 90%;
+    height: 50vh;
     overflow-x: scroll; 
-    z-index: 999;
     flex-wrap: wrap;
 }
 #memberCardsContainer::-webkit-scrollbar {
@@ -21,14 +21,30 @@
 }
 
 .glassCardContainer {
-    padding: 0 5%;
+    padding: 15%;
     height: 50vh;
     width: 50vh;
-  }
-  
-  .glassCardContainer.active {
-    border: 2px solid #00B7A9;
-    box-shadow: 0 0 10px rgba(0, 183, 169, 0.5);
+}
+
+/* .glassCardContainer */
+.activeCard {
+    height: 30vh;
+    width: 30vh;
+    background-image: url('../../assets/glassCard.png');
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+
+    box-shadow: 0 0 30px rgba(0, 183, 169, 0.5);
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
   }
   
 
@@ -53,10 +69,6 @@
     padding: 1%;
 }
 
-.glassCard.active{
-    background-color: #00B7A9;
-    border: 10px solid #00B7A9;
-}
 
 #footerContainer{
     width: 100%;

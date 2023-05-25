@@ -1,10 +1,28 @@
-#trianglePage{
+/* #trianglePage{
     height: 120vh;
-    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+} */
+
+@keyframes bgchange {
+    0%{
+        background-image: url(../../assets/triangleBlackBg.png);
+    }
+    50%{
+        background-image: url(../../assets/triangleBg.png);
+    }
+    100%{
+        background-image: url(../../assets/triangleBlackBg.png);
+    }
+    
+    /* from{
+        background-image: url(../../assets/triangleBlackBg.png);
+    }
+    to{
+        background-image: url(../../assets/triangleBg.png);
+    } */
 }

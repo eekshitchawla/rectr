@@ -1,59 +1,25 @@
 #joinUsContainer{
-    height: 80vh;
+    height: 120vh;
     background-image: url(../../assets/joinUsBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-#joinUsBtn:hover{
+#joinUsImg{
+    width: 50%;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+#joinUsImg:hover{
     transform: translateY(-30px);
     transition: transform 0.5s ease-in-out;
 }
 
-#joinUsBtn{
-    text-decoration: none;
-    background: none;
-    transition: transform 0.5s ease-in-out;
-}
 
-#joinUsImg{
-    margin: 0;
-}
 
-#joinPop{
-    display: flex;
-    flex-direction: column;
-}
 
-#popupContainer{
-    background-color: rgb(0, 0, 0,0.95);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-#labelEmail, #emailInput, #emailBtn, #closeBtn{
-    margin: 10% 0;
-}
-
-#emailInput{
-    padding: 5%;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-#emailBtn, #closeBtn{
-    padding: 5%;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-}
-
-#btns{
-    text-align: center;
-}

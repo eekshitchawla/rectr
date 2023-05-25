@@ -13,6 +13,7 @@ const Team = () => {
 
     const [isClickedFaq, setClickedFaq] = useState(false);
     const [isClickedHost, setClickedHost] = useState(false);
+    const [carouselIdx, setCarouselIdx] = useState(0);
 
     const handleFaq = () => {
         setClickedFaq(!isClickedFaq);
@@ -30,11 +31,13 @@ const Team = () => {
         { key: 7, memName: "SreSanjai7", designation: "Developer", picUrl: avatar },
     ];
 
-    const memberCards = members.map((member) => (
+    const memberCards = members.map((member, idx) => (
 
-        <div key={member.key} //id="glassCardContainer">
-            className={`glassCardContainer${isClickedFaq ? "active" : ""}`}>
-            <div className="glassCard" id="glassCard">
+        <div key={member.key} className="glassCardContainer">
+
+            <div
+                className={carouselIdx === idx ? `activeCard` : `glassCard`}
+                id="glassCard">
                 <img id="avatar" src={member.picUrl} alt="avatar" />
                 <div id="nameInCard">
                     <strong>{member.memName}</strong>
@@ -44,11 +47,13 @@ const Team = () => {
         </div>
     ));
 
+
+
     return (
         <div id="teamPageCard">
             <div id="memberCardsContainer">
                 <Slider
-                    centerPadding="0"
+                    centerPadding="50px"
                     arrows={true}
                     slidesToShow={3}
                     slidesToScroll={1}
@@ -56,8 +61,12 @@ const Team = () => {
                     pauseOnHover={false}
                     cssEase="linear"
                     autoplay
-                    autoplaySpeed={5000}
+                    autoplaySpeed={3000}
+                    centerMode={true}
+                    className="center"
+                    afterChange={i => setCarouselIdx(i)}
                 >
+
                     {memberCards}
                 </Slider>
             </div>

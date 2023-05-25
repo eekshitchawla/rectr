@@ -48,12 +48,6 @@
     height: auto;
 }
 
-/* #uaImg, #daImg, #saImg, #solImg, .imgTag */
-.animate{
-    animation: appear 2s 1 forwards ;
-    animation-delay: 2s;
-    opacity: 0;
-}
 #con1, #con2{
     display: flex;
     flex-wrap: wrap;
@@ -67,4 +61,38 @@
     to{
         opacity: 100%;
     }
+}
+
+
+
+
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-element {
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+    display: flex;
+  }
+  
+
+  .containers{
+       text-align: -webkit-center;   
+       color: white;   
+       opacity: 0;   
+       transition: opacity 0.8s ease-in-out; 
+    }  
+  .containers.show {   
+    transform: translateY(1%);   
+    opacity: 1; 
 }

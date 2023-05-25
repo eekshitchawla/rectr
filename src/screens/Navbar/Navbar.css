@@ -6,7 +6,10 @@
     flex-wrap: wrap;
     overflow: hidden;
     z-index: 999;
-    /* position: sticky; */
+    margin: 0;
+    position: absolute;
+    top: 0;
+    position: sticky;
   }
   
   #navbarContainer {
@@ -31,13 +34,14 @@
     font-size: 1.2vw;
     font-weight: 700;
   }
-  
+/*   
   #listItems>ul {
     display: flex;
     list-style: none;
-  }
+  } */
   
-  #listItems>ul>li>button{
+  /* #listItems>ul>li>button */
+  .listOfBtns{
      cursor: pointer;
     position: relative;
     font-size: 1vw;
@@ -53,7 +57,8 @@
     text-decoration: none;
     cursor: default;
   }
-  #listItems>ul>li>button::before{
+
+  .listOfBtns::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -64,14 +69,13 @@
     transition: width 0.3s ease-in-out;
   }
   
-  #listItems>ul>li>button:hover::before {
+  .listOfBtns:hover::before {
     width: 50%; /* Set the width to 50% on hover */
     
   }
   
-  #listItems>ul>li>button:hover {
+  .listOfBtns:hover {
     text-decoration: #00B7A9;
-
   }
   
   
@@ -98,11 +102,11 @@
   
   @keyframes bringDown {
     from {
-      top: 2vh;
+      top: -2vh;
       opacity: 0%;
     }
     to {
-      top: 4vh;
+      top: 0vh;
       opacity: 100%;
     }
   }

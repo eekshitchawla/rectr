@@ -1,11 +1,10 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import React, { useState } from "react";
 import { initializeApp } from "firebase/app";
-import { getFirestore, addDoc, collection, getDoc, doc } from "firebase/firestore";
+import { getFirestore, addDoc, collection, getDoc, doc, setDoc } from "firebase/firestore";
 
 import '../SignUp/SignUp.css'
 import signUpPic from '../../assets/signUpPic.png';
-import SignIn from "../SignIn/SignIn";
 
 const SignUp = () => {
 
@@ -33,17 +32,6 @@ const SignUp = () => {
     const handleAck = () => {
         window.location.href = "/ack"
     }
-    // async function submission(event) {
-    //     event.preventDefault();
-    //     await addDoc(collection(db, "users"), {
-    //         name: name,
-    //         email: email,
-    //         password: pass,
-    //     })
-    //     setName("");
-    //     setEmail("");
-    //     setPass("");
-    // }
     async function submission(event) {
         event.preventDefault();
 
@@ -58,7 +46,7 @@ const SignUp = () => {
             return;
         }
 
-        await addDoc(collection(db, "users"), {
+        await setDoc(doc(db, "users", email), {
             name: name,
             email: email,
             password: pass,

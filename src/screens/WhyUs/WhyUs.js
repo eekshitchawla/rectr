@@ -55,13 +55,13 @@ const WhyUs = () => {
                     <div id="titleContainer">
 
                         {data.map(({ title, key }) => (
-                            <h1
+                            <h2
                                 key={key}
                                 className={toggle === key ? "enlarged" : ""}
                                 onClick={() => handleTextClick(key)}
                             >
                                 {title}
-                            </h1>
+                            </h2>
                         ))}
                     </div>
                 </span>
