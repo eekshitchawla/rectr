@@ -19,6 +19,14 @@
   opacity: 0;
 }
 
+#headingH1{
+  font-size: 50px;
+}
+
+#content{
+  text-align: justify;
+}
+
 @keyframes slide-in-left {
   from {
     transform: translateX(-100%);

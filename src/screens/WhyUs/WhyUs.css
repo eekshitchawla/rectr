@@ -7,11 +7,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #00B7A9;
+    scroll-behavior:smooth;
+
 }
 
 #mainHead {
     color: white;
-    font-size: 20vh;
+    font-size: 50px;
 }
 
 #lhs {
@@ -99,4 +101,8 @@ h2.enlarged {
 
 #lhs h1:hover {
     color: #00B7A9;
+}
+
+#imgId{
+    margin: 1vh 0;
 }

@@ -52,6 +52,7 @@
 
 #tnc{
     display: flex;
+    padding: 2vh;
 }
 
 #signUpBtn{
@@ -91,6 +92,10 @@
     padding: 8px;
     color: red;
     font-weight: 700;
+}
+
+#imgGoogle{
+    height: 2vh;
 }
 
 #alreadyUser{

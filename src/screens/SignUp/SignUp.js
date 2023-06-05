@@ -5,6 +5,7 @@ import { getFirestore, addDoc, collection, getDoc, doc, setDoc } from "firebase/
 
 import '../SignUp/SignUp.css'
 import signUpPic from '../../assets/signUpPic.png';
+import googlePic from '../../assets/google.png';
 
 const SignUp = () => {
 
@@ -105,7 +106,7 @@ const SignUp = () => {
                             </span>
                         </div>
                         <div id="otherHalf">
-                            <button id="google" onClick={googleSignIn}> G</button>
+                            <button id="google" onClick={googleSignIn}> <img id="imgGoogle" src={googlePic} alt="" srcset="" /></button>
                             <div id="alreadyUser">
                                 <div id="alreadyAcc">Already Have An Account?</div>
                                 <button id="signInBtn" onClick={handleSignIn}>Sign In</button>

@@ -1,4 +1,3 @@
-// import React from "react";
 import "../Team/Team.css";
 import avatar from "../../assets/avatar.png";
 import tri from "../../assets/msgTriangle.png";
@@ -46,9 +45,6 @@ const Team = () => {
             </div>
         </div>
     ));
-
-
-
     return (
         <div id="teamPageCard">
             <div id="memberCardsContainer">
@@ -66,7 +62,6 @@ const Team = () => {
                     className="center"
                     afterChange={i => setCarouselIdx(i)}
                 >
-
                     {memberCards}
                 </Slider>
             </div>
@@ -76,12 +71,16 @@ const Team = () => {
                         <div id="faq">FAQ</div>
                         <div id="dropUps">
                             <div id="dropUp" onClick={handleFaq}>
-                                {isClickedFaq ? <div id="msgFaq" >Message displayed!</div> : null}
+                                {/* {isClickedFaq ? <div id="msgFaq" >Message displayed!</div> : null} */}
                                 <div id="dropUpContent"> How to use? <img id={isClickedFaq ? "triTurn" : "tri"} src={tri} alt="" /></div>
                             </div>
                             <div id="dropUp" onClick={handleHost}>
-                                {isClickedHost ? <span id="msgFaq" >Message displayed!</span> : null}
+                                {/* {isClickedHost ? <span id="msgFaq" >Message displayed!</span> : null} */}
                                 <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
+                            </div>
+                            <div id="msf">
+                                {isClickedFaq ? <div id="msgFaq" >Message displayed faq!</div> : null}
+                                {isClickedHost ? <div id="msgFaq" >Message displayed host!</div> : null}
                             </div>
                         </div>
                     </div>
@@ -105,8 +104,8 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </footer >
+        </div >
     );
 };
 

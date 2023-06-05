@@ -47,6 +47,8 @@ const WhyUs = () => {
         });
     };
 
+
+
     return (
         <div id="whyUsPage">
             <h1 id="mainHead">What We Offer?</h1>
@@ -68,6 +70,7 @@ const WhyUs = () => {
                 <div id="scrollContainer" ref={scrollContainerRef}>
                     {data.map(({ id, img }) => (
                         <img
+                            id="imgId"
                             key={id}
                             alt=""
                             src={img}
@@ -81,3 +84,4 @@ const WhyUs = () => {
 }
 
 export default WhyUs;
+

@@ -59,7 +59,7 @@ const HowWeWork = () => {
                 <strong>How We Work?</strong>
             </div>
             <div id="imgs">
-                <div class="fade-in-element">
+                <div className="fade-in-element">
                     <div className="containers" id="con1">
                         <img className="imgTag" id="bdImg" src={bd} alt="" />
                         <img className="imgTag" id="amImg" src={am} alt="" />

@@ -1,13 +1,3 @@
-/* #trianglePage{
-    height: 120vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-} */
-
 @keyframes bgchange {
     0%{
         background-image: url(../../assets/triangleBlackBg.png);
@@ -18,11 +8,4 @@
     100%{
         background-image: url(../../assets/triangleBlackBg.png);
     }
-    
-    /* from{
-        background-image: url(../../assets/triangleBlackBg.png);
-    }
-    to{
-        background-image: url(../../assets/triangleBg.png);
-    } */
 }

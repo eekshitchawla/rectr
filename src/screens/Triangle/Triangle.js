@@ -2,9 +2,10 @@ import { React, useState, useEffect, useRef } from "react";
 import "../Triangle/Triangle.css";
 import TrianglePic from "../../assets/triangle.png";
 
-const Triangle = () => {
+const Triangle = ({ count, setCount }) => {
     const [isRotated, setIsRotated] = useState(false);
     const [opac, setOpac] = useState(false);
+
     const triangleRef = useRef(null);
 
     const handleIntersection = (entries) => {
@@ -12,6 +13,8 @@ const Triangle = () => {
         if (entry.isIntersecting) {
             setIsRotated(true);
             setOpac(true);
+            count = count + 1;
+            setCount(count);
         } else {
             setIsRotated(false);
             setOpac(false);
@@ -62,11 +65,32 @@ const Triangle = () => {
         transition: "opacity 0.5s ease-in-out, transform 1s ease-in-out",
     };
 
+    const textTriangle = [
+        {
+            key: 1,
+            data: 'lorem1'
+        },
+        {
+            key: 2,
+            data: 'lorem2'
+        },
+        {
+            key: 3,
+            data: 'lorem3'
+        },
+    ]
+
     return (
         <>
-            <div style={trianglePage}>
+            <div style={trianglePage} >
+                {/* onScroll={() => {
+                console.log("heloo");
+            }}> */}
                 <div style={textOpac}>
-                    <h1>lorem ipsum</h1>
+                    {
+                        textTriangle[count % 3].data
+                    }
+                    {/* <h1>lorem ipsum</h1> */}
                 </div>
                 <img
                     ref={triangleRef}
