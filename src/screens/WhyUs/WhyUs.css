@@ -51,6 +51,7 @@ h2.enlarged {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     padding: 0 7vh 0 ;
+    scroll-behavior: smooth;
 }
 
 #scrollContainer::-webkit-scrollbar {
@@ -106,3 +107,11 @@ h2.enlarged {
 #imgId{
     margin: 1vh 0;
 }
+#tenantNhost h1.activePerson {
+    border-bottom: 3px solid #00B7A9;
+  }
+
+  #headingTNH{
+    color: white;
+  }
+  
