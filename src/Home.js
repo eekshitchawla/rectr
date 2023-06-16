@@ -26,7 +26,7 @@ const Home = () => {
         </div>
       </div>
       <div id='imgContainer'>
-        <img src={BACKGROUND} alt="background" height="auto" width="100%" />
+        <img src={BACKGROUND} alt="background" height="inherit" width="100%" />
       </div>
     </div>
     <Features />

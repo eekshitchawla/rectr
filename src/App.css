@@ -1,6 +1,6 @@
 /* home.js css */
 #landingPage{
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,13 +18,14 @@
   opacity: 0;
 }
 
-#headingH1{
-  font-size: 50px;
-}
-
 #content{
   font-size: 15px;
+  height: 12vh;
   text-align: justify;
+  overflow-y: scroll;
+}
+#content::-webkit-scrollbar{
+  display: none;
 }
 
 @keyframes slide-in-left {
@@ -40,6 +41,7 @@
 #heading, #content{
   padding: 5%;
 }
+
 #imgContainer{
   width: 60%;
   opacity: 0;

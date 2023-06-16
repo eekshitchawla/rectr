@@ -12,7 +12,7 @@ const Navbar = () => {
                         <div id="homeTitle">HOME</div>
                     </div>
                     <div id="listItems">
-                        <button className="listOfBtns"><a id="navLinks" href="../#landingPage" >Explore</a></button>
+                        <button className="listOfBtns"><a id="navLinks" href="../#landingPage" > Explore</a></button>
                         <button className="listOfBtns"><a id="navLinks" href="../#featuresPage" >Features</a></button>
                         <button className="listOfBtns"><a id="navLinks" href="../#workPage" >How It Works?</a></button>
                         <button className="listOfBtns"><a id="navLinks" href="../#whyUsPage" >Why Us?</a></button>

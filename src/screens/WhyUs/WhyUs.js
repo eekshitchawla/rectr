@@ -1,11 +1,8 @@
 import React, { useState, useRef } from "react";
-import imgUs from '../../assets/aiml.png';
-import imgUs2 from '../../assets/bigData.png';
+import imgUs from '../../assets/featuresHouse1.png'
 import './WhyUs.css';
 
 const WhyUs = () => {
-
-
     const tenantData = [
         {
             id: 1,
@@ -19,7 +16,7 @@ const WhyUs = () => {
             key: 2,
             title: "Lorem Ipsum 2",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs2
+            img: imgUs
         },
         {
             id: 3,
@@ -33,7 +30,7 @@ const WhyUs = () => {
             key: 4,
             title: "Lorem Ipsum 4",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs2
+            img: imgUs
         }
     ];
     const hostData = [
@@ -49,7 +46,7 @@ const WhyUs = () => {
             key: 2,
             title: "Lorem Ipsum 6",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs2
+            img: imgUs
         },
         {
             id: 3,
@@ -63,11 +60,9 @@ const WhyUs = () => {
             key: 4,
             title: "Lorem Ipsum 8",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs2
+            img: imgUs
         }
     ];
-
-
     const [toggle, setToggle] = useState(1);
     const [data, setData] = useState(tenantData);
     const scrollContainerRef = useRef(null);
@@ -117,7 +112,7 @@ const WhyUs = () => {
                             id="imgId"
                             key={id}
                             alt=""
-                            src={img}
+                            src={imgUs}
                             className={toggle === id ? "active" : ""}
                         />
                     ))}

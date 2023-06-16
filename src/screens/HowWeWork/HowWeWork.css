@@ -1,57 +1,62 @@
 #workPage{
     margin: 0;
-    height: 120vh;
+    height: 100vh;
     background-image: url(../../assets/howWeWork.png);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
 }
 #headingWork{
-    font-size: 10vh;
     width: 100%;
     color: white;
     padding: 2%;
 }
 
-#imgs{
+.fade-in-element{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .containers{
-    width:fit-content;
-    padding: 2%;
+    width: 15%;
+    height: 100%;
     place-self: center;
     flex-wrap: wrap;
 }
 
-#bdImg, #amImg, #uaImg, #daImg{
-    height: 30vh;
-    width: 32vh;
+.imgTag{
+    width: 100%;
     padding: 2%;
-}
-
-#paImg{
-    height: 50vh;
-    width: 40vh;
-}
-
-#solImg{
-    height: 45vh;
-    width: 35vh;
-}
-
-#saImg{
-    width: 30vh;
-    height: auto;
+    height:fit-content;
 }
 
 #con1, #con2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+#bdImg, #amImg{
+    height: 17vh;
+}
+
+#uaImg,#daImg{
+    height: 17vh;
+}
+
+#saImg{
+    height: 5vh;
+}
+
+#paImg, #solImg{
+    height: 35vh;
 }
 
 @keyframes appear {
