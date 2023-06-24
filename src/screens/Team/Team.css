@@ -120,16 +120,21 @@
     flex-wrap: wrap;
 }
 
-#msgFaq{
-    width: 90%;
+#msgFaq, #msgFaq2{
+    width: 30%;
+    height: 30px;
     box-shadow: 2px 2px 5px  white;
     /* background-color: rgb(255,255,255,0.2); */
     background-color: transparent;
     border-radius: 20px;
     margin: 1vh;
     padding: 1vh;
+    position: absolute;
+    display: flex;
 }
-
+#msgFaq2{
+    margin: 10vh 1vh;
+}
 #tri{
     height: 1.5vh;
 }

@@ -87,7 +87,7 @@ const WhyUs = () => {
 
     return (
         <div id="whyUsPage">
-            <h1 id="mainHead">What We Offer?</h1>
+            <h1 id="mainHead"><strong>WHAT WE OFFER?</strong></h1>
             <div id="tenantNhost" style={{ display: "flex", justifyContent: 'space-around' }}>
                 <h1 id="headingTNH" onClick={() => handleData(tenantData)} className={data === tenantData ? "activePerson" : ""}>Tenant</h1>
                 <h1 id="headingTNH" onClick={() => handleData(hostData)} className={data === hostData ? "activePerson" : ""}>Host</h1>

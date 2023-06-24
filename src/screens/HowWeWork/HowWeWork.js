@@ -56,7 +56,7 @@ const HowWeWork = () => {
     return (
         <div id="workPage">
             <div id="headingWork">
-                <h1>How We Work?</h1>
+                <h1 id="h1Heading">How We Work?</h1>
             </div>
             <div id="imgs">
                 <div className="fade-in-element">

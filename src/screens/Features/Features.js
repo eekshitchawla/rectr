@@ -5,7 +5,7 @@ const Features = () => {
     return <>
         <div id="featuresPage">
             <div id="mainHeading">
-                <h1><strong>BROWSE POPULAR HOUSES <br /> BASED ON FEATURES</strong></h1>
+                <h1>BROWSE POPULAR HOUSES <br /> BASED ON FEATURES</h1>
             </div>
             <div id="cards">
                 <div id="card1">

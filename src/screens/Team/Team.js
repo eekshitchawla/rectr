@@ -80,7 +80,7 @@ const Team = () => {
                             </div>
                             <div id="msf">
                                 {isClickedFaq ? <div id="msgFaq" >Message displayed faq!</div> : null}
-                                {isClickedHost ? <div id="msgFaq" >Message displayed host!</div> : null}
+                                {isClickedHost ? <div id="msgFaq2" >Message displayed host!</div> : null}
                             </div>
                         </div>
                     </div>
@@ -104,8 +104,8 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
-            </footer >
-        </div >
+            </footer>
+        </div>
     );
 };
 

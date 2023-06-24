@@ -8,12 +8,13 @@
     background-size: cover;
     color: #00B7A9;
     scroll-behavior:smooth;
-
+    font-size: 20px  ;
 }
 
 #mainHead {
     color: white;
     text-align-last: left;
+    color: #00B7A9;
 }
 
 #lhs {
