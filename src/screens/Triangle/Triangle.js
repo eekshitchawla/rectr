@@ -160,7 +160,7 @@ const Triangle = ({ count, setCount }) => {
         width: "50vh",
         height: "50vh",
         transform: isRotated ? "rotate(0deg)" : "rotate(360deg)",
-        // transition: "transform 0.5s ease-in-out",
+        transition: "transform 1s ease-in-out",
     };
 
     const textOpac = {

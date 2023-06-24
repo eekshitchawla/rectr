@@ -2,11 +2,14 @@
     0%{
         background-image: url(../../assets/triangleBlackBg.png);
     }
+    15%{
+      background-image: url(../../assets/triangleBg.png);
+    }
     50%{
-        background-image: url(../../assets/triangleBg.png);
+      background-image: url(../../assets/triangleBlackBg.png);
     }
     100%{
-        background-image: url(../../assets/triangleBlackBg.png);
+      background-image: url(../../assets/triangleBg.png);
     }
 }
 
