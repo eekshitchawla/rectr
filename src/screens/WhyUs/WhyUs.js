@@ -61,7 +61,10 @@ const WhyUs = () => {
             title: "Lorem Ipsum 8",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
             img: imgUs
-        }
+        },
+        {
+            id: 5
+        },
     ];
     const [toggle, setToggle] = useState(1);
     const [data, setData] = useState(tenantData);
@@ -89,8 +92,8 @@ const WhyUs = () => {
         <div id="whyUsPage">
             <h1 id="mainHead"><strong>WHAT WE OFFER?</strong></h1>
             <div id="tenantNhost" style={{ display: "flex", justifyContent: 'space-around' }}>
-                <h1 id="headingTNH" onClick={() => handleData(tenantData)} className={data === tenantData ? "activePerson" : ""}>Tenant</h1>
-                <h1 id="headingTNH" onClick={() => handleData(hostData)} className={data === hostData ? "activePerson" : ""}>Host</h1>
+                <h1 id="headingTNH" onClick={() => handleData(tenantData)} className={data.length === tenantData.length ? "activePerson" : ""}>Tenant</h1>
+                <h1 id="headingTNH" onClick={() => handleData(hostData)} className={data.length === hostData.length ? "activePerson" : ""}>Host</h1>
             </div>
             <div id="bodyWhy">
                 <span id="lhs">
