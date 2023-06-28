@@ -1,6 +1,6 @@
 #workPage{
     margin: 0;
-    height: 100vh;
+    height: 120vh;
     background-image: url(../../assets/howWeWork.png);
     background-size: cover;
     display: flex;

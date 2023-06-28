@@ -71,10 +71,11 @@
   }
   
   .listOfBtns:hover::before {
-    width: 50%; /* Set the width to 50% on hover */
-    
+    width: 50%; 
   }
-  
+  .underline{
+    color: #00B7A9;
+  }
   .listOfBtns:hover {
     text-decoration: #00B7A9;
   }
