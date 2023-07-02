@@ -65,7 +65,7 @@
     bottom: 0;
     left: 25%;
     width: 0;
-    height: 1px;
+    height: 3px;
     background-color: #00B7A9;
     transition: width 0.3s ease-in-out;
   }

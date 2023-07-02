@@ -1,5 +1,5 @@
 #teamPageCard {
-    height: 150vh;
+    height: 180vh;
     background-image: url('../../assets/team.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +122,7 @@
 
 #msgFaq, #msgFaq2{
     width: 30%;
-    height: 30px;
+    height: 10vh;
     box-shadow: 2px 2px 5px  white;
     /* background-color: rgb(255,255,255,0.2); */
     background-color: transparent;
@@ -133,7 +133,7 @@
     display: flex;
 }
 #msgFaq2{
-    margin: 10vh 1vh;
+    margin: 15vh 1vh;
 }
 #tri{
     height: 1.5vh;

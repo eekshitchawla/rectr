@@ -21,13 +21,9 @@ const Team = () => {
         setClickedHost(!isClickedHost)
     }
     const members = [
-        { key: 1, memName: "SreSanjai1", designation: "Owner", picUrl: avatar },
-        { key: 2, memName: "SreSanjai2", designation: "Manager", picUrl: avatar },
-        { key: 3, memName: "SreSanjai3", designation: "Developer", picUrl: avatar },
-        { key: 4, memName: "SreSanjai4", designation: "Owner", picUrl: avatar },
-        { key: 5, memName: "SreSanjai5", designation: "Manager", picUrl: avatar },
-        { key: 6, memName: "SreSanjai6", designation: "Developer", picUrl: avatar },
-        { key: 7, memName: "SreSanjai7", designation: "Developer", picUrl: avatar },
+        { key: 1, memName: "SreSanjai", designation: "Founder and CEO", picUrl: avatar },
+        { key: 2, memName: "Dhanush", designation: "Front-End", picUrl: avatar },
+        { key: 3, memName: "Suresh", designation: "Social Media and Content", picUrl: avatar },
     ];
 
     const memberCards = members.map((member, idx) => (
@@ -79,8 +75,14 @@ const Team = () => {
                                 <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
                             </div>
                             <div id="msf">
-                                {isClickedFaq ? <div id="msgFaq" >Message displayed faq!</div> : null}
-                                {isClickedHost ? <div id="msgFaq2" >Message displayed host!</div> : null}
+                                {isClickedFaq ? <div id="msgFaq" >Download the app from play store ( Launching Soon).
+
+                                    Search the desired Rental house you prefer from filters and search.Absolutely Free.
+
+                                    Register. Scheduled-Visit. Own-it. </div> : null}
+                                {isClickedHost ? <div id="msgFaq2" >For Now we accepting Rental house around Tamilnadu.
+
+                                    Submit Your Property for Free Here!.</div> : null}
                             </div>
                         </div>
                     </div>

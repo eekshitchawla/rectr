@@ -106,6 +106,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../Triangle/Triangle.css";
 import TrianglePic from "../../assets/triangle.png";
+import claim from "../../assets/claim.png";
+
 
 const Triangle = ({ count, setCount }) => {
     const [isRotated, setIsRotated] = useState(false);
@@ -153,7 +155,7 @@ const Triangle = ({ count, setCount }) => {
         justifyContent: "center",
         alignItems: "center",
         backgroundSize: "cover",
-        animation: isRotated ? "bgchange 4s ease-in-out" : ""
+        animation: isRotated ? "bgchange 4s ease-in-out" : "",
     };
 
     const triangleStyles = {
@@ -169,7 +171,8 @@ const Triangle = ({ count, setCount }) => {
         transition: "opacity 0.5s ease-in-out, transform 1s ease-in-out",
     };
 
-    const textTriangle = ["lorem1", "lorem2", "lorem3"];
+    const textTriangle = ["Security", "Efficiency", "Easy To Use"]
+    const contextTriangle = ["No Compromise", "40% Faster than the current market", "GenZ and Millineals"]
     const rotateIt = () => {
         setIsRotated((prevState) => !prevState);
     };
@@ -179,7 +182,7 @@ const Triangle = ({ count, setCount }) => {
         const timer = setInterval(() => {
             setTextIndex((prevIndex) => (prevIndex + 1) % textTriangle.length);
             rotateIt()
-        }, 2000);
+        }, 4000);
 
         return () => {
             clearInterval(timer);
@@ -189,6 +192,12 @@ const Triangle = ({ count, setCount }) => {
     return (
         <>
             <div style={trianglePage}>
+                <div id="headTriCont">
+                    <div id="headingTri">
+                        <h1>WHAT WE CLAIM?</h1>
+                    </div>
+                    <img src={claim} alt="" />
+                </div>
                 <div style={textOpac}>
                     {textTriangle.map((val, index) => (
                         <div
@@ -204,6 +213,21 @@ const Triangle = ({ count, setCount }) => {
                     ))}
                 </div>
                 <img id="imgRot" ref={triangleRef} src={TrianglePic} alt="" style={triangleStyles} />
+                <div id="textOpac">
+                    {contextTriangle.map((val, index) => (
+                        <div div
+                            key={index}
+                            style={{
+                                display: index === textIndex ? "block" : "none",
+                                animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
+                                padding: '2vh',
+                                fontSize: '20px'
+                            }}
+                        >
+                            {val}
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     );

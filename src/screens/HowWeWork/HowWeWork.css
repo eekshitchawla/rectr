@@ -7,13 +7,17 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 10vh;
-}
+    }
 #headingWork{
     width: 100%;
     color: white;
     padding: 2%;
     font-size: 20px;
+}
+#h1Heading{
+    position: absolute;
+    left: 10vw;
+    padding: 0;
 }
 
 .fade-in-element{
