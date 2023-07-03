@@ -74,6 +74,23 @@
   overflow-y: scroll;
   width: 30%;
 }
+
+#imgRot{
+  width: 50vh;
+  height: 50vh;
+}
 #imgss::-webkit-scrollbar{
   display: none;
+}
+@media screen and (max-width:600px) {
+  #imgRot{
+    width: 30vw;
+    height: 30vh;
+  }
+  #headTriCont{
+    width: 100%;
+  }
+  #headingTri, #claim{
+    width: 50%;
+  }
 }

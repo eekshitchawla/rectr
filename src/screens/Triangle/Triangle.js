@@ -163,8 +163,7 @@ const Triangle = ({ count, setCount }) => {
     };
 
     const triangleStyles = {
-        width: "50vh",
-        height: "50vh",
+
         transform: isRotated ? "rotate(0deg)" : "rotate(360deg)",
         transition: "transform 1s ease-in-out",
     };

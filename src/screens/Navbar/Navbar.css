@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
   }
@@ -110,5 +110,11 @@
     to {
       top: 0vh;
       opacity: 100%;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .listOfBtns, #homeTitle{
+      font-size: 10px;
     }
   }
