@@ -1,6 +1,6 @@
 import React from "react";
 import '../Acknowledge/Acknowledge.css';
-import mailPic from '../../assets/mail.png';
+import mailPic from '../../assets/celebrate.jpg';
 
 const Acknowledge = () => {
     return <>

@@ -107,6 +107,9 @@ import React, { useState, useEffect, useRef } from "react";
 import "../Triangle/Triangle.css";
 import TrianglePic from "../../assets/triangle.png";
 import claim from "../../assets/claim.png";
+import triangle1 from "../../assets/triangle1.png";
+import triangle2 from "../../assets/triangle2.png";
+import triangle3 from "../../assets/triangle3.png";
 
 
 const Triangle = ({ count, setCount }) => {
@@ -146,7 +149,8 @@ const Triangle = ({ count, setCount }) => {
     }, []);
 
     const trianglePage = {
-        height: "120vh",
+        // height: "120vh",
+        width: "100%",
         color: "white",
         display: "flex",
         flexDirection: "column",
@@ -173,6 +177,7 @@ const Triangle = ({ count, setCount }) => {
 
     const textTriangle = ["Security", "Efficiency", "Easy To Use"]
     const contextTriangle = ["No Compromise", "40% Faster than the current market", "GenZ and Millineals"]
+    const imgsTriangle = [triangle1, triangle2, triangle3]
     const rotateIt = () => {
         setIsRotated((prevState) => !prevState);
     };
@@ -191,42 +196,70 @@ const Triangle = ({ count, setCount }) => {
 
     return (
         <>
-            <div style={trianglePage}>
-                <div id="headTriCont">
-                    <div id="headingTri">
-                        <h1>WHAT WE CLAIM?</h1>
+            <div id="claimPage">
+                <div style={trianglePage}>
+                    <div id="headTriCont">
+                        <div id="headingTri">
+                            <h1>WHAT WE CLAIM?</h1>
+                        </div>
+                        <img id="claim" src={claim} alt="" />
                     </div>
-                    <img src={claim} alt="" />
-                </div>
-                <div style={textOpac}>
-                    {textTriangle.map((val, index) => (
-                        <div
-                            key={index}
-                            style={{
-                                display: index === textIndex ? "block" : "none",
-                                animation: index === textIndex ? "textAnimation 2s ease-in-out" : ""
-                            }}
-                            className={index === textIndex ? "animated-text" : ""}
-                        >
-                            {val}
+                    <div id="claimContent">
+
+                        <div id="triangle">
+
+                            <div style={textOpac}>
+                                {textTriangle.map((val, index) => (
+                                    <div
+                                        key={index}
+                                        style={{
+                                            display: index === textIndex ? "block" : "none",
+                                            animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
+                                            fontWeight: '600',
+                                            fontSize: "20px"
+                                        }}
+                                        className={index === textIndex ? "animated-text" : ""}
+                                    >
+                                        {val}
+                                    </div>
+                                ))}
+                            </div>
+                            <img id="imgRot" ref={triangleRef} src={TrianglePic} alt="" style={triangleStyles} />
+                            <div id="textOpac">
+                                {contextTriangle.map((val, index) => (
+                                    <div
+                                        key={index}
+                                        style={{
+                                            display: index === textIndex ? "block" : "none",
+                                            animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
+                                            padding: '2vh',
+                                            fontSize: '20px',
+                                            fontWeight: '600'
+                                        }}
+                                    >
+                                        {val}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    ))}
-                </div>
-                <img id="imgRot" ref={triangleRef} src={TrianglePic} alt="" style={triangleStyles} />
-                <div id="textOpac">
-                    {contextTriangle.map((val, index) => (
-                        <div div
-                            key={index}
-                            style={{
-                                display: index === textIndex ? "block" : "none",
-                                animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
-                                padding: '2vh',
-                                fontSize: '20px'
-                            }}
-                        >
-                            {val}
+                        <div id="imgss">
+                            {imgsTriangle.map((val, index) => (
+                                <img
+                                    style={{
+                                        display: index === textIndex ? "block" : "none",
+                                        animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
+                                        padding: '2vh',
+                                        fontSize: '20px',
+                                        height: "100%",
+                                        width: "100%"
+                                    }}
+                                    src={val}
+                                    alt="claims"
+                                />
+
+                            ))}
                         </div>
-                    ))}
+                    </div>
                 </div>
             </div>
         </>

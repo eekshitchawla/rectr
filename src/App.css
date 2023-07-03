@@ -83,12 +83,13 @@
 
 #landingPage{
   height: 100vh;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-image: url('../src/assets/newBg.png');
-  background-size: 115%;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -104,10 +105,7 @@
 }
 
 #content{
-  /* font-size: 15px;
-  height: 12vh;
-  text-align: justify;
-  overflow-y: scroll; */
+  width: 100%;
 }
 /* #content::-webkit-scrollbar{
   display: none;
@@ -126,8 +124,9 @@
 @media screen and (max-width:768px){
   #landingPage{
     flex-direction: column;
+    background-position: right;
   }
-  #headingContainer, #imgContainer{
-    width: 100%;
+  #headingContainer{
+    width: 40%;
   }
 }

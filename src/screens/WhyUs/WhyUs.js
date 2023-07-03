@@ -1,5 +1,12 @@
 import React, { useState, useRef } from "react";
-import imgUs from '../../assets/featuresHouse1.png'
+import tenant1 from '../../assets/tenant1.jpg'
+import tenant2 from '../../assets/tenant2.jpg'
+import tenant3 from '../../assets/tenant3.jpg'
+import tenant4 from '../../assets/tenant4.jpg'
+
+import host2 from '../../assets/host2.jpg'
+import host3 from '../../assets/host3.jpg'
+import host4 from '../../assets/host4.jpg'
 import './WhyUs.css';
 
 const WhyUs = () => {
@@ -9,28 +16,28 @@ const WhyUs = () => {
             key: 1,
             title: "Lorem Ipsum 1",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: tenant1
         },
         {
             id: 2,
             key: 2,
             title: "Lorem Ipsum 2",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: tenant2
         },
         {
             id: 3,
             key: 3,
             title: "Lorem Ipsum 3",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: tenant3
         },
         {
             id: 4,
             key: 4,
             title: "Lorem Ipsum 4",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: tenant4
         }
     ];
     const hostData = [
@@ -39,28 +46,28 @@ const WhyUs = () => {
             key: 1,
             title: "Lorem Ipsum 5",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: tenant1
         },
         {
             id: 2,
             key: 2,
             title: "Lorem Ipsum 6",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: host2
         },
         {
             id: 3,
             key: 3,
             title: "Lorem Ipsum 7",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: host3
         },
         {
             id: 4,
             key: 4,
             title: "Lorem Ipsum 8",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
-            img: imgUs
+            img: host4
         },
         {
             id: 5
@@ -115,7 +122,7 @@ const WhyUs = () => {
                             id="imgId"
                             key={id}
                             alt=""
-                            src={imgUs}
+                            src={img}
                             className={toggle === id ? "active" : ""}
                         />
                     ))}

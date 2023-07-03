@@ -23,9 +23,9 @@
 #cards{
     display: flex;
     flex-direction: column;
-    /* z-index: 0; */
+    z-index: 1;
     height: 60%;
-    overflow-y: scroll;
+    overflow-y:scroll;
     overflow-x: hidden;
 }
   
@@ -50,6 +50,9 @@
     width: 40%;
     padding: 5%;
 }
+#lorem{
+    text-align: justify;
+}
 #imgCard1{
     width: 40%;
 }
@@ -64,15 +67,9 @@
         flex-wrap: wrap;
         padding: 5% 0;
     }
-    #cards{
-        padding-top: 30%;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-align: center;
-    }
+
     #heading{
         text-align: justify;
     }
+    
 }

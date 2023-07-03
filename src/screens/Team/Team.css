@@ -13,11 +13,7 @@
 #memberCardsContainer {
     width: 90%;
     height: 50vh;
-    overflow-x: scroll; 
     flex-wrap: wrap;
-}
-#memberCardsContainer::-webkit-scrollbar {
-    display: none;
 }
 
 .glassCardContainer {
@@ -28,8 +24,8 @@
 
 /* .glassCardContainer */
 .activeCard {
-    height: 30vh;
-    width: 30vh;
+    height: 40vh;
+    width: 40vh;
     background-image: url('../../assets/glassCard.png');
     opacity: 0.8;
     background-repeat: no-repeat;
@@ -54,8 +50,8 @@
 }
 
 .glassCard {
-    height: 30vh;
-    width: 30vh;
+    height: 40vh;
+    width: 40vh;
     background-image: url('../../assets/glassCard.png');
     opacity: 0.8;
     background-repeat: no-repeat;
@@ -68,7 +64,14 @@
     align-items: center;
     padding: 1%;
 }
-
+#avatar{
+    width: 50%;
+    height: 50%;
+}
+#nameInCard,#designationInCard{
+    width: 90%;
+    text-align: center;
+}
 
 #footerContainer{
     width: 100%;
@@ -122,18 +125,20 @@
 
 #msgFaq, #msgFaq2{
     width: 30%;
-    height: 10vh;
+    height: 11vh;
     box-shadow: 2px 2px 5px  white;
     /* background-color: rgb(255,255,255,0.2); */
     background-color: transparent;
     border-radius: 20px;
-    margin: 1vh;
-    padding: 1vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
     position: absolute;
     display: flex;
 }
 #msgFaq2{
-    margin: 15vh 1vh;
+    margin: 13vh 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 #tri{
     height: 1.5vh;
@@ -167,4 +172,15 @@
 
 #reachImg{
     height: 10vh;
+}
+
+@media screen and (max-width:768px){
+    #msgFaq, #msgFaq2{
+        width: 50%;
+        overflow: hidden;
+    }
+    .glassCard,.activeCard{
+        width: 80%;
+        flex-wrap: wrap;
+    }
 }

@@ -84,17 +84,6 @@
     padding: 20px;
 }
 
-#google{
-    position: relative;
-    left: 20%;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid grey;
-    padding: 8px;
-    color: red;
-    font-weight: 700;
-}
-
 #imgGoogle{
     height: 2vh;
 }
@@ -112,22 +101,29 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-    /* CSS rules for mobile devices */
+@media only screen and (max-width: 768px) {
     #signInPage{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-        margin: 0;
+        background-color: #fff;
     }
-    #pictureContainer, #detailsContainer{
-        width: 100%;
-        border-radius: 0%;
+    #detailsContainer{
+        width: 100vw;
+        border-radius: 0;
     }
-    #form{
-        display: flex;
+    #pictureContainer{
+        display: none;
+    }
+    #txt,#otherOptions{
         text-align: center;
+    }
+    #horizontalComponent{
+        display: none;
+    }
+    #google{
+        left: 0;
+    }
+    #alreadyUser, #form{
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
   }
