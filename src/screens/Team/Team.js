@@ -92,7 +92,8 @@ const Team = () => {
                             <div id="mailCont">
                                 <img id="reachImg" src={mail} alt="" />
                                 <u>
-                                    <a id="link" href="http://localhost:3000/">Happy to Hear</a>
+                                    <a id="link" href="mailto:sresanjai.founder@rectr.in">Happy to Hear</a>
+
                                 </u>
 
                             </div>
@@ -100,7 +101,7 @@ const Team = () => {
                                 <img id="reachImg" src={insta} alt="" />
                                 <u>
 
-                                    <a id="link" href="http://localhost:3000/">Happy to Hear</a>
+                                    <a id="link" target="_blank" href="https://instagram.com/rectr.in?igshid=MzNlNGNkZWQ4Mg==" rel="noreferrer">Happy to Hear</a>
                                 </u>
                             </div>
                         </div>

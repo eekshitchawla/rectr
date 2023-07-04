@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10vh;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -173,14 +174,45 @@
 #reachImg{
     height: 10vh;
 }
+#footerContainer, #footer, #reachUs{
+    height: 40vh;
+}
+#msf{
+    height: 10vh;
+}
 
 @media screen and (max-width:768px){
+    #teamPageCard{
+        background-image: none;
+        background-color: black;        
+    }
     #msgFaq, #msgFaq2{
-        width: 50%;
         overflow: hidden;
     }
     .glassCard,.activeCard{
         width: 80%;
         flex-wrap: wrap;
+    }
+    #footerContainer, #footer{
+        width: 100%;
+        border-radius: 50px;
+        padding: 10px;
+        background-color: #008D86;
+        display: flex;
+        flex-wrap: wrap;
+        height: 120vh;
+    }
+    #faqContainer, #reachUs, #reach{
+        width: 100%;
+    }
+    #reachUs{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #imgsLink{
+        justify-content: space-around;
+        align-items: center;
     }
 }

@@ -83,7 +83,8 @@
 
 #landingPage{
   height: 100vh;
-  width: auto;
+  width: 95vw;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
