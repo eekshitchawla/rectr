@@ -1,6 +1,6 @@
 #workPage{
     margin: 0;
-    height: 120vh;
+    height: auto;
     background-image: url(../../assets/howWeWork.png);
     background-size: cover;
     display: flex;
@@ -10,17 +10,16 @@
     color: white;
     font-size: 18px;
     text-align: justify;
+    padding: 2vh;
 }
 #headingWork{
     width: 100%;
     color: white;
-    padding: 2%;
+    padding: 2vh;
     font-size: 20px;
 }
 #h1Heading{
-    position: absolute;
-    left: 10vw;
-    padding: 0;
+    padding-left: 10vw;
 }
 
 .fade-in-element{
