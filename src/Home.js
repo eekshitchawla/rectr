@@ -62,10 +62,11 @@ const Home = () => {
       <div id="headingContainer">
         <div id="heading"><h1 id="headingH1">WELCOME TO RECTR.IN</h1></div>
         <div id="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam modi accusamus soluta
-          sit unde aperiam ipsa suscipit, aspernatur cumque, alias hic ratione, repellat illo voluptate
-          ipsum asperiores voluptas! Error laborum assumenda nulla totam beatae vel praesentium? Totam
-          perferendis tempora voluptas eaque quaerat quas in et rem blanditiis facilis? Rem, incidunt.
+          <h4>
+
+            FINDING RENTED HOUSE MADE EASIER
+          </h4>
+          Explore the whole new experience of the house searching process with the Rectr app.
         </div>
       </div>
     </div>

@@ -61,24 +61,38 @@ const HowWeWork = () => {
             <div id="imgs">
                 <div className="fade-in-element">
                     <div className="containers" id="con1">
-                        <img className="imgTag" id="bdImg" src={bd} alt="" />
-                        <img className="imgTag" id="amImg" src={am} alt="" />
+                        <div id="frame">
+                            <img className="imgTag" id="bdImg" src={bd} alt="" />
+                            Big Data
+                        </div>
+                        <div id="frame">
+                            <img className="imgTag" id="amImg" src={am} alt="" />
+                            AI & ML
+                        </div>
                     </div>
                     <div className="containers" id="con2">
                         <img className="imgTag" id="uaImg" src={ua} alt="" />
                         <img className="imgTag" id="daImg" src={da} alt="" />
                     </div>
                     <div className="containers" id="con3">
-                        <img className="imgTag" id="paImg" src={pa} alt="" />
+                        <div id="frame">
+                            <img className="imgTag" id="paImg" src={pa} alt="" />
+                            Proprietary Algorithm
+                        </div>
                     </div>
                     <div className="containers " id="con4">
                         <img className="imgTag" id="saImg" src={sa} alt="" />
                     </div>
                     <div className="containers" id="con5">
-                        <img className="imgTag" id="solImg" src={sol} alt="" />
+                        <div id="frame">
+                            <img className="imgTag" id="solImg" src={sol} alt="" />
+                            Solution
+                        </div>
                     </div>
                 </div>
             </div>
+            We engineered our own proprietary algorithms to ensure a flawless functioning of the system.
+            <br />Combining AI and Big Data to produce tailored solutions to your house searching process.
         </div>
     );
 };

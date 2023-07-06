@@ -15,8 +15,7 @@ const Features = () => {
                     <div id="txtCard1">
                         <h1 id="heading">Personalized Content According To Your Interest</h1>
                         <div id="lorem">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt eligendi accusantium impedit adipisci, ea amet, eum reprehenderit voluptates ratione delectus aliquam? Maxime veritatis laborum voluptatibus quis, sed aut illum mollitia voluptatem ut. Officiis doloribus tenetur voluptas itaque, deleniti ratione exercitationem debitis veritatis dolore inventore esse neque maiores dolores! Culpa?
-                        </div>
+                            Introducing the renovated search bar that precisely reflects your search results. Made for you & your needs.                        </div>
                     </div>
                     <div id="imgCard1"><img className="cardImg" src={feature1} alt="" /></div>
                 </div>
@@ -25,15 +24,14 @@ const Features = () => {
                     <div id="txtCard1">
                         <h1 id="heading">Personalized Content According To Your Interest</h1>
                         <div id="lorem">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt eligendi accusantium impedit adipisci, ea amet, eum reprehenderit voluptates ratione delectus aliquam? Maxime veritatis laborum voluptatibus quis, sed aut illum mollitia voluptatem ut. Officiis doloribus tenetur voluptas itaque, deleniti ratione exercitationem debitis veritatis dolore inventore esse neque maiores dolores! Culpa?
-                        </div>
+                            Personalized house listings that return a better ROI each minute spent in the app.                        </div>
                     </div>
                 </div>
                 <div id="card1">
                     <div id="txtCard1">
                         <h1 id="heading">Personalized Content According To Your Interest</h1>
                         <div id="lorem">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt eligendi accusantium impedit adipisci, ea amet, eum reprehenderit voluptates ratione delectus aliquam? Maxime veritatis laborum voluptatibus quis, sed aut illum mollitia voluptatem ut. Officiis doloribus tenetur voluptas itaque, deleniti ratione exercitationem debitis veritatis dolore inventore esse neque maiores dolores! Culpa?
+                            Now tenants can choose not only a house but also the owners/host from the pool of highly valued people according to your preferences.
                         </div>
                     </div>
                     <div id="imgCard1"><img className="cardImg" src={feature3} alt="" /></div>
@@ -43,8 +41,7 @@ const Features = () => {
                     <div id="txtCard1">
                         <h1 id="heading">Personalized Content According To Your Interest</h1>
                         <div id="lorem">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt eligendi accusantium impedit adipisci, ea amet, eum reprehenderit voluptates ratione delectus aliquam? Maxime veritatis laborum voluptatibus quis, sed aut illum mollitia voluptatem ut. Officiis doloribus tenetur voluptas itaque, deleniti ratione exercitationem debitis veritatis dolore inventore esse neque maiores dolores! Culpa?
-                        </div>
+                            Host/Owners need not worry about listing your property with Rectr, we give a  clear picture of people using our app.                        </div>
                     </div>
                 </div>
                 <div id="blur2">b</div>

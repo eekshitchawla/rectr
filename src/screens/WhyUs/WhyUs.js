@@ -14,29 +14,29 @@ const WhyUs = () => {
         {
             id: 1,
             key: 1,
-            title: "Lorem Ipsum 1",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "Pre book your house and your given the first preference",
+            text: "",
             img: tenant1
         },
         {
             id: 2,
             key: 2,
-            title: "Lorem Ipsum 2",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "Pay rent without money",
+            text: "",
             img: tenant2
         },
         {
             id: 3,
             key: 3,
-            title: "Lorem Ipsum 3",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "Get to know your community/area",
+            text: "",
             img: tenant3
         },
         {
             id: 4,
             key: 4,
-            title: "Lorem Ipsum 4",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "Listing only verified profiles, we respect your privacy",
+            text: "",
             img: tenant4
         }
     ];
@@ -44,29 +44,29 @@ const WhyUs = () => {
         {
             id: 1,
             key: 1,
-            title: "Lorem Ipsum 5",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: " Background checks on people visiting the house",
+            text: "",
             img: tenant1
         },
         {
             id: 2,
             key: 2,
-            title: "Lorem Ipsum 6",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: " Owners now can earn passively with rectr",
+            text: "",
             img: host2
         },
         {
             id: 3,
             key: 3,
-            title: "Lorem Ipsum 7",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "A full-fledged dashboard to control in and out of your listing",
+            text: "",
             img: host3
         },
         {
             id: 4,
             key: 4,
-            title: "Lorem Ipsum 8",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur reiciendis voluptates, aperiam repellat perferendis qui quidem ipsa rem tempore, eius eos, eligendi saepe? Ipsa illum dicta ipsum officiis numquam.",
+            title: "Rent your house with verified tenants",
+            text: "",
             img: host4
         },
         {

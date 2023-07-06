@@ -108,9 +108,24 @@ h2.enlarged {
 
 #tenantNhost h1.activePerson {
     border-bottom: 3px solid #00B7A9;
-  }
-
-  #headingTNH{
     color: white;
+    font-size: 2.8rem;
+    animation: anim 1s ease-in-out;
+  }
+  @keyframes anim {
+    0%{
+        border-bottom: none;
+        font-size: 2.5rem;
+    }
+    100%{
+        border-bottom: 3px solid #00B7A9;
+        font-size: 2.8rem;
+    }
+  }
+  
+  
+  
+  #headingTNH{
+    color: lightgray;
   }
   

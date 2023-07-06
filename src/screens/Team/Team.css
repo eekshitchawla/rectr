@@ -51,8 +51,8 @@
 }
 
 .glassCard {
-    height: 40vh;
-    width: 40vh;
+    height: 35vh;
+    width: 35vh;
     background-image: url('../../assets/glassCard.png');
     opacity: 0.8;
     background-repeat: no-repeat;
@@ -125,22 +125,12 @@
 }
 
 #msgFaq, #msgFaq2{
-    width: 30%;
-    height: 11vh;
     box-shadow: 2px 2px 5px  white;
-    /* background-color: rgb(255,255,255,0.2); */
-    background-color: transparent;
     border-radius: 20px;
-    margin: 0.5vh;
-    padding: 0.5vh;
-    position: absolute;
-    display: flex;
+    padding: 1vh;
+    font-size: 16px;
 }
-#msgFaq2{
-    margin: 13vh 0;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 #tri{
     height: 1.5vh;
 }
@@ -175,10 +165,7 @@
     height: 10vh;
 }
 #footerContainer, #footer, #reachUs{
-    height: 40vh;
-}
-#msf{
-    height: 10vh;
+    height: 50vh;
 }
 
 @media screen and (max-width:768px){

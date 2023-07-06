@@ -67,19 +67,15 @@ const Team = () => {
                         <div id="faq">FAQ</div>
                         <div id="dropUps">
                             <div id="dropUp" onClick={handleFaq}>
-                                {/* {isClickedFaq ? <div id="msgFaq" >Message displayed!</div> : null} */}
                                 <div id="dropUpContent"> How to use? <img id={isClickedFaq ? "triTurn" : "tri"} src={tri} alt="" /></div>
-                            </div>
-                            <div id="dropUp" onClick={handleHost}>
-                                {/* {isClickedHost ? <span id="msgFaq" >Message displayed!</span> : null} */}
-                                <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
-                            </div>
-                            <div id="msf">
                                 {isClickedFaq ? <div id="msgFaq" >Download the app from play store ( Launching Soon).
 
                                     Search the desired Rental house you prefer from filters and search.Absolutely Free.
 
                                     Register. Scheduled-Visit. Own-it. </div> : null}
+                            </div>
+                            <div id="dropUp" onClick={handleHost}>
+                                <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
                                 {isClickedHost ? <div id="msgFaq2" >For Now we accepting Rental house around Tamilnadu.
 
                                     Submit Your Property for Free Here!.</div> : null}
@@ -101,7 +97,7 @@ const Team = () => {
                                 <img id="reachImg" src={insta} alt="" />
                                 <u>
 
-                                    <a id="link" target="_blank" href="https://instagram.com/rectr.in?igshid=MzNlNGNkZWQ4Mg==" rel="noreferrer">Happy to Hear</a>
+                                    <a id="link" target="_blank" href="https://instagram.com/rectr.in?igshid=MzNlNGNkZWQ4Mg==" rel="noreferrer">We are Active</a>
                                 </u>
                             </div>
                         </div>

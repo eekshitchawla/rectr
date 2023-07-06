@@ -175,7 +175,7 @@ const Triangle = ({ count, setCount }) => {
     };
 
     const textTriangle = ["Security", "Efficiency", "Easy To Use"]
-    const contextTriangle = ["No Compromise", "40% Faster than the current market", "GenZ and Millineals"]
+    const contextTriangle = ["We sealed it.", " 40% efficient than current market and still pushing the limits, packed with a warmth experience.", "Easy to use for both GenZ & Millennials with gamification of process and get the work done peacefully."]
     const imgsTriangle = [triangle1, triangle2, triangle3]
     const rotateIt = () => {
         setIsRotated((prevState) => !prevState);
@@ -232,6 +232,7 @@ const Triangle = ({ count, setCount }) => {
                                             display: index === textIndex ? "block" : "none",
                                             animation: index === textIndex ? "textAnimation 2s ease-in-out" : "",
                                             padding: '2vh',
+                                            paddingTop: '5vh',
                                             fontSize: '20px',
                                             fontWeight: '600'
                                         }}
