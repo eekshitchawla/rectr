@@ -7,12 +7,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import React, { useState } from 'react';
+import { useEffect } from "react";
+import teamHead from "../../assets/teamHead.png";
 
 const Team = () => {
 
     const [isClickedFaq, setClickedFaq] = useState(false);
     const [isClickedHost, setClickedHost] = useState(false);
     const [carouselIdx, setCarouselIdx] = useState(0);
+    const [slidesToShow, setSlidesToShow] = useState(3);
+
 
     const handleFaq = () => {
         setClickedFaq(!isClickedFaq);
@@ -20,6 +24,22 @@ const Team = () => {
     const handleHost = () => {
         setClickedHost(!isClickedHost)
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setSlidesToShow(1);
+            } else {
+                setSlidesToShow(3);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const members = [
         { key: 1, memName: "SreSanjai", designation: "Founder and CEO", picUrl: avatar },
         { key: 2, memName: "Dhanush", designation: "Front-End", picUrl: avatar },
@@ -43,11 +63,12 @@ const Team = () => {
     ));
     return (
         <div id="teamPageCard">
+            <img id="teamHead" src={teamHead} alt="" />
             <div id="memberCardsContainer">
                 <Slider
                     centerPadding="50px"
                     arrows={true}
-                    slidesToShow={3}
+                    slidesToShow={slidesToShow}
                     slidesToScroll={1}
                     infinite
                     pauseOnHover={false}
@@ -78,7 +99,7 @@ const Team = () => {
                                 <div id="dropUpContent"> Host your Property! <img id={isClickedHost ? "triTurn" : "tri"} src={tri} alt="" /></div>
                                 {isClickedHost ? <div id="msgFaq2" >For Now we accepting Rental house around Tamilnadu.
 
-                                    Submit Your Property for Free Here!.</div> : null}
+                                    Submit Your Property for Free <a target="_blank" style={{ fontWeight: '700' }} href="https://docs.google.com/forms/d/e/1FAIpQLSeKviYJ1VcoI8es5fANH91uZL8O0znacdgpCOuCK6jQ5a1KAQ/viewform" rel="noreferrer"> Here! </a>.</div> : null}
                             </div>
                         </div>
                     </div>

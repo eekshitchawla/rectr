@@ -234,7 +234,7 @@ const Triangle = ({ count, setCount }) => {
                                             padding: '2vh',
                                             paddingTop: '5vh',
                                             fontSize: '20px',
-                                            fontWeight: '600'
+                                            fontWeight: '600',
                                         }}
                                     >
                                         {val}

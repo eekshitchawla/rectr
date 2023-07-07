@@ -125,7 +125,7 @@ const Navbar = () => {
                                 <img src={logo} alt="" />
                             </a>
                         </div>
-                        <div id="homeTitle">HOME</div>
+                        <div id="homeTitle">RECTR</div>
                     </div>
                     <div id="listItems">
                         <button

@@ -13,7 +13,7 @@ const Features = () => {
             <div id="cards">
                 <div id="card1">
                     <div id="txtCard1">
-                        <h1 id="heading">Personalized Content According To Your Interest</h1>
+                        <h1 id="heading">Precise search engine that reflects your search.</h1>
                         <div id="lorem">
                             Introducing the renovated search bar that precisely reflects your search results. Made for you & your needs.                        </div>
                     </div>
@@ -29,7 +29,7 @@ const Features = () => {
                 </div>
                 <div id="card1">
                     <div id="txtCard1">
-                        <h1 id="heading">Personalized Content According To Your Interest</h1>
+                        <h1 id="heading">Choose the Host or tenant who match your mindset</h1>
                         <div id="lorem">
                             Now tenants can choose not only a house but also the owners/host from the pool of highly valued people according to your preferences.
                         </div>
@@ -39,7 +39,7 @@ const Features = () => {
                 <div id="card1">
                     <div id="imgCard1"><img className="cardImg" src={feature4} alt="" /></div>
                     <div id="txtCard1">
-                        <h1 id="heading">Personalized Content According To Your Interest</h1>
+                        <h1 id="heading"> Background check for enhanced security.</h1>
                         <div id="lorem">
                             Host/Owners need not worry about listing your property with Rectr, we give a  clear picture of people using our app.                        </div>
                     </div>

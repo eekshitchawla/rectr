@@ -1,5 +1,6 @@
 #signUpPage{
     display: flex;
+    
     background-color: #008D86;
     height:83vh;
     overflow: hidden;
@@ -14,10 +15,6 @@
     align-items: center;
 }
 
-#signUpPic{
-    /* height: 50vh; */
-}
-
 #detailsContainer{
     /* height: 90vh; */
     width: 50%;
@@ -28,7 +25,8 @@
 
 #innerContanier{
     padding: 10vh 0 0 10vw;
-    width: 90%;
+    width: 65%;
+    text-align: -webkit-center;
 }
   
 #txt{
@@ -52,19 +50,19 @@
     margin: 3%;
 }
 
-#tnc{
+/* #tnc{
     display: flex;
-}
+} */
 
 #signUpBtn{
     color: white;
-    padding: 3%;
+    padding: 2vh;
     background-color: #008D86;
     border-radius: 20px;
     border: none;
 }
 
-
+/*
 #horizontalComponent{
     width: 50%; 
     height: 20px; 
@@ -80,7 +78,7 @@
     padding: 0 10px;
 }
 
-#otherHalf{
+  #otherHalf{
     padding: 20px;
 }
 
@@ -105,12 +103,25 @@
     border: none;
     color: #008D86;
     font-weight: 600;
+} */
+#signInBtn{
+    background-color: #fff;
+    border: none;
+    color: #008D86;
+    font-weight: 700;
 }
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #signUpPage{
         background-color: #fff;
+        align-items: center;
+    justify-content: center;
+    }
+    #pictureContainer{
+        display: none;
+    }
+    #inputs{
+        width: 80%;
     }
   }
   

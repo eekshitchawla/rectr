@@ -21,6 +21,10 @@
     font-size: 40px;
     font-weight: 700;
     background-image: radial-gradient( #2ab7bcbd,rgba(211, 211, 211, 0.100));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
 }
 
 #joinUs:hover{

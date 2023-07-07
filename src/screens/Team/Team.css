@@ -1,7 +1,8 @@
 #teamPageCard {
-    height: 180vh;
+    /* height: 200vh; */
     background-image: url('../../assets/team.png');
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -11,9 +12,14 @@
     flex-wrap: wrap;
 }
 
+#teamHead{
+    width: 50%;
+    align-self: flex-end;
+}
+
 #memberCardsContainer {
     width: 90%;
-    height: 50vh;
+    height: 70vh;
     flex-wrap: wrap;
 }
 
@@ -172,6 +178,9 @@
     #teamPageCard{
         background-image: none;
         background-color: black;        
+    }
+    #teamHead{
+        width: 100%;
     }
     #msgFaq, #msgFaq2{
         overflow: hidden;

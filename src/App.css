@@ -82,23 +82,23 @@
 
 
 #landingPage{
-  height: 70vh;
+  height: 82vh;
   /* width: 98vw; */
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   background-image: url('../src/assets/newBg.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #headingContainer {
   width: 30%;
   text-align: justify;
   position: absolute;
-  top: 20vh;
+  /* top: 20vh; */
   left: 10vh;
   animation: slide-in-left 2s 1 forwards;
   animation-delay: 0.5s;

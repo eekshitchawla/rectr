@@ -60,12 +60,8 @@ const Home = () => {
   return <>
     <div id="landingPage">
       <div id="headingContainer">
-        <div id="heading"><h1 id="headingH1">WELCOME TO RECTR.IN</h1></div>
+        <div id="heading"><h1 id="headingH1">FINDING RENTED HOUSE MADE EASIER </h1></div>
         <div id="content">
-          <h4>
-
-            FINDING RENTED HOUSE MADE EASIER
-          </h4>
           Explore the whole new experience of the house searching process with the Rectr app.
         </div>
       </div>

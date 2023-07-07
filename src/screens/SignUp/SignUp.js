@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
-
 import '../SignUp/SignUp.css'
 import signUpPic from '../../assets/signUpPic.png';
 
 const SignUp = () => {
-
     // const firebaseConfig = {
     //     apiKey: "AIzaSyBgp6--sp1F78QVryczWIlKPb0cgHfLLl4",
     //     authDomain: "rectr-8b5b2.firebaseapp.com",
@@ -16,7 +14,6 @@ const SignUp = () => {
     //     appId: "1:509755370950:web:8cf6299d1298e492ecd6c7",
     //     measurementId: "G-ZYMNWN3YTS"
     // };
-
     const firebaseConfig = {
         apiKey: "AIzaSyAQY7lptTGVNeTOPcSDTssM0IriyI07MW0",
         authDomain: "rectr-app.firebaseapp.com",
@@ -135,6 +132,7 @@ const SignUp = () => {
                             </div>
                         </div>
                     </div> */}
+                    <button id="signInBtn" onClick={() => window.location.href = '/'}>Back To Home</button>
                 </div>
             </div>
         </div>
