@@ -54,6 +54,7 @@
 #avatar {
     height: 15vh;
     width: 13vh;
+    border-radius: 50%;
 }
 
 .glassCard {

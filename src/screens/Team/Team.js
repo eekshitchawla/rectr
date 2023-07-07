@@ -11,6 +11,7 @@ import teamHead from "../../assets/teamHead.png";
 import suresh from "../../assets/suresh.jpg";
 import sre from "../../assets/sresanjai.jpg";
 import dhanush from "../../assets/dh.jpg";
+import yuga from "../../assets/yuga.jpg";
 
 const Team = () => {
 
@@ -44,8 +45,9 @@ const Team = () => {
 
     const members = [
         { key: 1, memName: "SreSanjai", designation: "Founder and CEO", picUrl: sre },
-        { key: 2, memName: "Dhanush", designation: "Front-End", picUrl: dhanush },
+        { key: 2, memName: "Dhanush", designation: "Developer", picUrl: dhanush },
         { key: 3, memName: "Suresh", designation: "Social Media and Content", picUrl: suresh },
+        { key: 4, memName: "Yuga", designation: "Data Collection and Stratergies", picUrl: yuga },
     ];
 
     const memberCards = members.map((member, idx) => (
