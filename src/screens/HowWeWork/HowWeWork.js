@@ -91,8 +91,11 @@ const HowWeWork = () => {
                     </div>
                 </div>
             </div>
-            We engineered our own proprietary algorithms to ensure a flawless functioning of the system.
-            <br />Combining AI and Big Data to produce tailored solutions to your house searching process.
+            <div id="cont" style={{ padding: "3vh" }}>
+
+                We engineered our own proprietary algorithms to ensure a flawless functioning of the system.
+                <br />Combining AI and Big Data to produce tailored solutions to your house searching process.
+            </div>
         </div>
     );
 };

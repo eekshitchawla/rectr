@@ -173,7 +173,9 @@
 #footerContainer, #footer, #reachUs{
     height: 50vh;
 }
-
+#reachUs{
+    justify-content: space-evenly;
+}
 @media screen and (max-width:768px){
     #teamPageCard{
         background-image: none;

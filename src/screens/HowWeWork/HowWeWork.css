@@ -90,3 +90,17 @@
 .imgTag{
     width: 70%;
 }
+
+@media screen and (max-width : 768px) {
+    #con1, #con2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #frame, .imgTag{
+        width: 40%;
+    }
+    #uaImg, #daImg, #saImg{
+        transform: rotate(90deg);
+    }
+}

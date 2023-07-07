@@ -1,5 +1,4 @@
 import "../Team/Team.css";
-import avatar from "../../assets/avatar.png";
 import tri from "../../assets/msgTriangle.png";
 import mail from "../../assets/mailBlack.png";
 import insta from "../../assets/instaPic.png";
@@ -9,6 +8,9 @@ import "slick-carousel/slick/slick.css";
 import React, { useState } from 'react';
 import { useEffect } from "react";
 import teamHead from "../../assets/teamHead.png";
+import suresh from "../../assets/suresh.jpg";
+import sre from "../../assets/sresanjai.jpg";
+import dhanush from "../../assets/dh.jpg";
 
 const Team = () => {
 
@@ -41,9 +43,9 @@ const Team = () => {
     }, []);
 
     const members = [
-        { key: 1, memName: "SreSanjai", designation: "Founder and CEO", picUrl: avatar },
-        { key: 2, memName: "Dhanush", designation: "Front-End", picUrl: avatar },
-        { key: 3, memName: "Suresh", designation: "Social Media and Content", picUrl: avatar },
+        { key: 1, memName: "SreSanjai", designation: "Founder and CEO", picUrl: sre },
+        { key: 2, memName: "Dhanush", designation: "Front-End", picUrl: dhanush },
+        { key: 3, memName: "Suresh", designation: "Social Media and Content", picUrl: suresh },
     ];
 
     const memberCards = members.map((member, idx) => (
